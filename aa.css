@@ -91,7 +91,7 @@ body{
     align-items: center;
     font-variant: small-caps;
     gap: 5px;
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     font-style: italic;
     font-family:serif;
@@ -187,6 +187,7 @@ h1 span:nth-child(12){
     animation-delay: 0s;
 }
 }
+
 
 
 
