@@ -1,0 +1,52 @@
+body{
+    background-image: linear-gradient(to left,black,rgb(24, 24, 109));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+    gap: 5px;
+    font-size: 5rem;
+    color: white;
+    font-style: italic;
+    font-family:serif;
+}
+
+h1 span{
+    display: inline-block;
+    animation-name: span;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+@keyframes span{
+    0%,100%{
+        transform: translateY(0px) scale(1);
+        color: white;
+
+    }
+    50%{
+        color: rgb(188, 51, 74);
+        transform: translateY(-15px) scale(1.1);
+    }
+
+}
+span:hover,span:focus{
+            color: rgb(187, 53, 75);
+        transform: translateY(-15px) scale(1.1);
+}
