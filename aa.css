@@ -18,6 +18,8 @@ h1 span{
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     position: relative;
+    transform-style: preserve-3d;
+transition:  transform 0.5s;
 }
 h1 span:nth-child(1){
     animation-delay: 0s;
@@ -187,6 +189,7 @@ h1 span:nth-child(12){
     animation-delay: 0s;
 }
 }
+
 
 
 
