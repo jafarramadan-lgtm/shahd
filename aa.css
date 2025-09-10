@@ -84,11 +84,29 @@ span:hover,span:focus{
 
 @media(max-width: 800px){
 body{
-    font-size:1rem;
+    background-image: linear-gradient(to left,black,rgb(24, 24, 109));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+    gap: 5px;
+    font-size: 1rem;
+    color: white;
+    font-style: italic;
+    font-family:serif;
+}
+
+h1 span{
+    display: inline-block;
+    animation-name: span;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    position: relative;
 }
 h1 span:nth-child(1){
     animation-delay: 0s;
-    left: 30px;
+    left: 60px;
 }
 h1 span:nth-child(2){
     animation-delay: 0.2s;
@@ -110,6 +128,45 @@ h1 span:nth-child(5){
         left: 30px;
 
 }
+h1 span:nth-child(7){
+    animation-delay: 1s;
+}
+h1 span:nth-child(8){
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(9){
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(10){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(11){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(12){
+    animation-delay: 0s;
+}
+
+
+
+
+@keyframes span{
+    0%,100%{
+        transform: translateY(0px) scale(1);
+        color: white;
+
+    }
+    50%{
+        color: palevioletred;
+        transform: translateY(-15px) scale(1.1);
+    }
+
+}
+span:hover,span:focus{
+            color: palevioletred;
+        transform: translateY(-15px) scale(1.1);
+}
+}
     
 h1 span:nth-child(7){
     animation-delay: 1s;
@@ -130,5 +187,6 @@ h1 span:nth-child(12){
     animation-delay: 0s;
 }
 }
+
 
 
